@@ -9,7 +9,6 @@ import { useRef } from "react";
 
 export const Produtos = ({ produto, url }) => {
   //Stars//
-  console.log(produto.type)
 
   const [update, setUpdate] = useState(false);
 
