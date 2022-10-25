@@ -7,7 +7,7 @@ import { Button } from "../Button/Button";
 import { useEffect } from "react";
 import { useRef } from "react";
 
-export const Produtos = ({ produto }) => {
+export const Produtos = ({ produto, url }) => {
   //Stars//
   console.log(produto.type)
 
@@ -17,7 +17,7 @@ export const Produtos = ({ produto }) => {
   let totalStars = useRef(0);
 
   useEffect(() => {
-    fetch(`http://localhost:80/productStar/${produto.product_id}`)
+    fetch(`url/${produto.product_id}`)
       .then((res) => res.json())
       .then((resultado) => {
         totalStars.current = resultado[0].totalStars;
