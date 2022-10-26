@@ -12,7 +12,6 @@ export const Home = ({url}) => {
     .then((res) => res.json())
     .then((resultado) => {
       setProdutos(resultado);
-    referrerPolicy: "unsafe_url"
     });
   }, []);
 
